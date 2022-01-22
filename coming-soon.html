@@ -5,46 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming &mdash; GenZtechies</title>
+
+    <!-- Primary Meta Tags -->
+    <title>GenZtechies Meet 🎥 </title>
+    <meta name="title" content="GenZtechies Meet 🎥 ">
+    <meta name="description" content="Create a more secure, flexible, and completely free video conference">
+    <link rel="icon" href="https://meet.genztechies.com/assets/logo/logo-icon-purple.svg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meet.genztechies.com/">
+    <meta property="og:title" content="GenZtechies Meet 🎥 ">
+    <meta property="og:description" content="Create a more secure, flexible, and completely free video conference">
+    <meta property="og:image" content="https://meet.genztechies.com/assets/site-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://meet.genztechies.com/">
+    <meta property="twitter:title" content="GenZtechies Meet 🎥 ">
+    <meta property="twitter:description" content="Create a more secure, flexible, and completely free video conference">
+    <meta property="twitter:image" content="https://meet.genztechies.com/assets/site-preview.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <style>
-    .coming-soon{
+    .coming-soon {
         animation: comingsoon 2s ease-in-out 1s infinite reverse forwards;
     }
 
     @keyframes comingsoon {
-        0%, 100%{
-            background-color:#FFB800;;
+        0%,
+        100% {
+            background-color: #FFB800;;
         }
-        50%{
+
+        50% {
             background-color: #5D5CD6;
         }
-        75%{
+
+        75% {
             background-color: #0DBA67;
         }
     }
 </style>
 
 <body class="min-h-screen bg-cover" style='background-image: url("./assets/images/background.svg");'>
-    <header class="relative mx-auto w-screen">
-       <div class="coming-soon rounded-md bg-amber-400 text-center shadow-md lg:py-4 lg:px-10 py-4 px-5 w-4/5 mx-[35px] md:mx-auto
-       lg:w-1/6 lg:mx-[550px] my-[20px] bg-[#FFB800s]">Coming soon</div> 
-    </header>
 
-    <section class="my-auto flex flex-row flex-wrap-reverse justify-center min-h-full my-10">
-        <div class="lg:w-1/3 w-full lg:mx-auto mx-[30px] text-center my-32">
-            <p class="font-extrabold lg:text-4xl text-3xl leading-loose">
-                Gzt-Web 🤟
+    <div class="flex mx-auto justify-center max-w-xs py-10">
+        <div class="w-full coming-soon rounded-full text-center shadow-2xl p-5 font-bold text-lg">Coming soon</div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:py-10">
+        <div class="mx-auto my-auto text-center md:text-left px-3 lg:pl-24">
+            <p class="font-bold text-4xl lg:text-5xl my-1">
+                Gzt-Meet 🤘🏾
             </p>
-            <p>Create a More secure, more flexible, and completely free video conference </p>
+            <p class="font-light text-lg md:text-xl tracking-widest max-w-md">
+                Create a more secure, more flexible <br /> and completely free video conference.
+            </p>
         </div>
-        <div class="flex py-5 mx-auto">
+        <div class="m-auto">
             <img src="./assets/images/camera.png" alt="video-camera" class="max-w-full w-[400px]" srcset="">
         </div>
-    </section>
+    </div>
+
 </body>
 
 </html>
