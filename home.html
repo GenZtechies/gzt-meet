@@ -45,5 +45,57 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="relative mx-auto">
+        <div class="flex justify-between bg-transparent text-black w-screen">
+          <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+            <a class="text-3xl font-bold font-heading" href="/"> Gzt-Web </a>
+            <ul class="flex px-4 mx-auto font-semibold font-heading space-x-12">
+              <li class="hidden md:block">
+                <a class="text-sm" href="/">How It Works</a>
+              </li>
+              <li class="hidden md:block">
+                <a class="text-sm" href="/">Team</a>
+              </li>
+            </ul>
+            <div class="flex items-center space-x-5 items-center">
+              <a class="flex items-center" href="/new">
+                <button
+                  class="bg-green-600 px-5 py-2 rounded-full font-bold text-white text-sm"
+                >
+                  Create A Meeting
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h1>Premium Meetings free for everyone 🤘🏾</h1>
+          <h3>
+            Create a More secure, more flexible, and completely free video
+            conference
+          </h3>
+
+          <div>
+            <input type="text" placeholder="Enter a Code or Link" />
+            <input type="button" value="Join Meeting" />
+          </div>
+        </div>
+        <div class="m-auto">
+          <img
+            src="./assets/images/camera.png"
+            alt="video-camera"
+            class="max-w-full w-[400px]"
+            srcset=""
+          />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
