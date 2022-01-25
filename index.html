@@ -53,10 +53,22 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      .box-shadow {
+        box-shadow: 9.2px 11.6px 16.4px rgba(0, 0, 0, 0.045),
+          20.1px 25.3px 45.5px rgba(0, 0, 0, 0.065),
+          38.3px 48.3px 109.4px rgba(0, 0, 0, 0.085),
+          104px 131px 363px rgba(0, 0, 0, 0.13);
+      }
+    </style>
   </head>
   <body
     class="min-h-screen bg-cover"
-    style="background-image: url('./assets/images/background.svg')"
+    style="
+      background-image: url('./assets/images/background.svg');
+      font-family: 'Manrope', sans-serif;
+    "
   >
     <header>
       <nav class="max-w-7xl mx-auto container px-4">
@@ -86,19 +98,31 @@
     </header>
 
     <main class="max-w-7xl mx-auto container px-4">
-      <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:py-10">
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8 lg:py-10">
         <div>
-          <h1 class="text-5xl leading-[4rem] text-left font-semibold">
+          <h1
+            class="text-4xl lg:text-5xl leading-[3rem] lg:leading-[4rem] text-left font-extrabold"
+          >
             Premium Meetings free for everyone 🤘🏾
           </h1>
-          <h3>
+          <h3 class="font-semibold text-xl py-5">
             Create a More secure, more flexible, and completely free video
             conference
           </h3>
 
-          <div>
-            <input type="text" placeholder="Enter a Code or Link" />
-            <input type="button" value="Join Meeting" />
+          <div
+            class="box-shadow bg-white p-4 rounded-full flex justify-between my-2 space-x-3"
+          >
+            <input
+              type="text"
+              placeholder="Enter a Code or Link"
+              class="outline-none ml-3 w-full"
+            />
+            <input
+              type="button"
+              value="Join Meeting"
+              class="font-semibold bg-green-600 px-5 py-3 rounded-full hover:bg-green-700 focus:bg-green-700 transition duration-300 ease-in-out text-white cursor-pointer"
+            />
           </div>
         </div>
         <div class="m-auto">
