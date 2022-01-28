@@ -7,15 +7,15 @@
                     Gzt-Web
                 </a>
                 <ul class="flex px-4 mx-auto font-semibold font-heading space-x-12">
-                    <li class="hidden md:block"><a class="text-sm" href="/">How It Works</a></li>
-                    <li class="hidden md:block"><a class="text-sm" href="/">Team</a></li>
+                    <li class="hidden md:block"><router-link class="text-sm" to="/how-it-works">How It Works</router-link></li>
+                    <li class="hidden md:block"><router-link class="text-sm" to="/team">Team</router-link></li>
                 </ul>
                 <div class="flex space-x-5 items-center">
-                    <a class="flex items-center" href="/new">
+                    <router-link class="flex items-center" to="/new">
                         <button class="bg-green-600 px-5 py-2 rounded-full font-bold text-white text-sm">
                             Create A Meeting
                         </button>
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>

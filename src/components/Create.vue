@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Home page</h1>
+        <h1>Create A Meeting</h1>
     </div>
 </template>
