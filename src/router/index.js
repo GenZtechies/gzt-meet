@@ -6,6 +6,7 @@ import Team from "../pages/Team.vue";
 import CreateMeeting from "../pages/CreateMeeting.vue";
 import HowItWorks from "../pages/HowItWorks.vue";
 import MeetingRoom from "../pages/MeetingRoom.vue";
+import NotFound from "../pages/NotFound.vue";
 
 // Vue Router Configuration
 const router = createRouter({
@@ -34,6 +35,10 @@ const router = createRouter({
             path: "/:id",
             name: "meeting-room",
             component: MeetingRoom,
+        },
+        {
+            path: "/:catchAll(.*)",
+            component: NotFound,
         },
     ],
     history: createWebHistory(),

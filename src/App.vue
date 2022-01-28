@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar.vue";
   <div
     id="app"
     class="min-h-screen bg-cover"
-    style=" background-image: url('./assets/images/background.svg'); font-family: 'Manrope', sans-serif; "
+    style=" background-image: url('/assets/images/background.svg'); font-family: 'Manrope', sans-serif; "
   >
     <main>
       <Navbar />
