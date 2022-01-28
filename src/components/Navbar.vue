@@ -7,8 +7,12 @@
                     Gzt-Web
                 </a>
                 <ul class="flex px-4 mx-auto font-semibold font-heading space-x-12">
-                    <li class="hidden md:block"><router-link class="text-sm" to="/how-it-works">How It Works</router-link></li>
-                    <li class="hidden md:block"><router-link class="text-sm" to="/team">Team</router-link></li>
+                    <li class="hidden md:block">
+                        <router-link class="text-sm" to="/how-it-works">How It Works</router-link>
+                    </li>
+                    <li class="hidden md:block">
+                        <router-link class="text-sm" to="/team">Team</router-link>
+                    </li>
                 </ul>
                 <div class="flex space-x-5 items-center">
                     <router-link class="flex items-center" to="/new">
@@ -22,8 +26,3 @@
     </nav>
     </div>
 </template>
-<script>
-export default {
-    
-}
-</script>

@@ -1,30 +1,48 @@
-import Vue from 'vue'
-import App from './App.vue'
-import VueRouter from 'vue-router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
-// Router import thingys
+// Tailwind CSS
+import "./tailwind.css";
 
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import Team from './components/Team.vue'
-import Create from './components/Create.vue'
+// Pages
+import Home from "./pages/Home.vue";
+import Team from "./pages/Team.vue";
+import CreateMeeting from "./pages/CreateMeeting.vue";
+import HowItWorks from "./pages/HowItWorks.vue";
+import MeetingRoom from "./pages/MeetingRoom.vue";
 
+// Vue Router Configuration
+const router = createRouter({
+    routes: [
+        {
+            path: "/",
+            name: "home",
+            component: Home,
+        },
+        {
+            path: "/team",
+            name: "team",
+            component: Team,
+        },
+        {
+            path: "/new",
+            name: "create-meeting",
+            component: CreateMeeting,
+        },
+        {
+            path: "/how-it-works",
+            name: "how-it-works",
+            component: HowItWorks,
+        },
+        {
+            path: "/:id",
+            name: "meeting-room",
+            component: MeetingRoom,
+        },
+    ],
+    history: createWebHistory(),
+});
 
-// Router init
-
-Vue.use(VueRouter);
-const router = new VueRouter({
-  routes : [ 
-    {path: '/', component: Home},
-    {path: '/how-it-works', component: About},
-    {path: '/team', component: Team},
-    {path: '/new', component: Create},
-  ],
-  mode : 'history'
-})
-
-new Vue({
-  el: '#app',
-  render: h => h(App),
-  router: router,
-})
+// Vue Instance Start
+createApp(App).use(router).mount("#app");
