@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // Pages
 import Home from "../pages/Home.vue";
-import Team from "../pages/Team.vue";
+import Contributors from "../pages/Contributors.vue";
 import CreateMeeting from "../pages/CreateMeeting.vue";
 import HowItWorks from "../pages/HowItWorks.vue";
 import MeetingRoom from "../pages/MeetingRoom.vue";
@@ -17,9 +17,9 @@ const router = createRouter({
             component: Home,
         },
         {
-            path: "/team",
-            name: "team",
-            component: Team,
+            path: "/contributors",
+            name: "contributors",
+            component: Contributors,
         },
         {
             path: "/new",
