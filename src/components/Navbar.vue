@@ -1,11 +1,10 @@
 <template>
-    <div>
-        <nav class="relative mx-auto">
+    <nav class="relative mx-auto">
         <div class="flex justify-between bg-transparent text-black w-screen">
             <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-                <a class="text-3xl font-bold font-heading" href="/">
-                    Gzt-Web
-                </a>
+                <router-link class="text-3xl font-bold font-heading" to="/">
+                    GenZ-Meet
+                </router-link>
                 <ul class="flex px-4 mx-auto font-semibold font-heading space-x-12">
                     <li class="hidden md:block">
                         <router-link class="text-sm" to="/how-it-works">How It Works</router-link>
@@ -24,5 +23,4 @@
             </div>
         </div>
     </nav>
-    </div>
 </template>
