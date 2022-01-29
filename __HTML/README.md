@@ -1,1 +1,0 @@
-# GenZtechies Meet 🎥
