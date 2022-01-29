@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: |
           yarn build
-          cp CNAME dist/
+          cp CNAME 404.html dist/
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.7
