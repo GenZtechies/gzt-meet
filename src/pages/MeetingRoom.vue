@@ -1,8 +1,8 @@
 <template>
     <div>
-        <main id="meet" class="w-screen h-screen fixed top-0 bg-[#5D5CD6]" />
+        <main id="meet" class="w-screen h-screen fixed top-0 bg-[#000]" />
 
-        <section v-if="loading == true" className="flex flex-col items-center justify-center w-screen h-screen fixed top-0 bg-[#5D5CD6]">
+        <section v-if="loading == true" className="flex flex-col items-center justify-center w-screen h-screen fixed top-0 bg-[#000] text-white">
             <div className="flex flex-col items-center justify-center w-full flex-1 px-1 lg:px-20 text-center">
                 <div className="flex justify-center items-center">
                     <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white" />
@@ -17,8 +17,11 @@
 export default {
     // Get the meeting id from the url
     mounted() {
+        const createdMeetings = JSON.parse(localStorage.getItem('meetings')) || [];
         const meetingId = this.meetingId;
 
+        const isModerator = createdMeetings.includes(meetingId);
+    
         // API mock to check if the meeting id is valid
         setTimeout(() => {
             // Initialize the meeting
@@ -33,7 +36,7 @@ export default {
                     SHOW_JITSI_WATERMARK: false,
                     HIDE_DEEP_LINKING_LOGO: true,
                     NATIVE_APP_NAME: 'GenZtechies',
-                    DEFAULT_BACKGROUND: '#5D5CD6',
+                    // DEFAULT_BACKGROUND: '#5D5CD6',
                     JITSI_WATERMARK_LINK: "https://meet.genztechies.com",
                     SHOW_CHROME_EXTENSION_BANNER: false,
                     VIDEO_QUALITY_LABEL_DISABLED: true,
@@ -76,6 +79,12 @@ export default {
                 },
                 onload: () => {
                     this.loading = false;
+                }
+            });
+
+            meetAPI.addEventListener('participantRoleChanged', function(event) {
+                if (event.role === "moderator" && isModerator) {
+                    meetAPI.executeCommand('toggleLobby', true);
                 }
             });
 

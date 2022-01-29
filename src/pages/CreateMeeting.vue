@@ -45,6 +45,10 @@ export default {
 
         // Mock API call to save meeting id
         setTimeout(() => {
+            const createdMeetings = JSON.parse(localStorage.getItem('meetings')) || [];
+            createdMeetings.push(uniqueId);
+            localStorage.setItem('meetings', JSON.stringify(createdMeetings));
+
             this.loading = false;
         }, 2500);
     },
