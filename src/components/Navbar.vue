@@ -15,7 +15,7 @@
                 </ul>
                 <div class="flex space-x-5 items-center">
                     <router-link class="flex items-center" to="/new">
-                        <button class="bg-green-600 px-5 py-2 rounded-full font-bold text-white text-sm">
+                        <button class="bg-green-600 px-5 py-2 rounded font-bold text-white text-sm">
                             Create New Meeting
                         </button>
                     </router-link>
