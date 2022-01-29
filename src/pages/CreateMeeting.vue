@@ -40,7 +40,7 @@ import { nanoid } from 'nanoid';
 
 export default {
     mounted() {
-        const uniqueId = `${nanoid(2)}-${nanoid(3)}-${nanoid(3)}`;
+        const uniqueId = `${nanoid(3)}-${nanoid(3)}-${nanoid(3)}`.toUpperCase();
         this.uuid = uniqueId;
 
         // Mock API call to save meeting id
@@ -50,7 +50,7 @@ export default {
             localStorage.setItem('meetings', JSON.stringify(createdMeetings));
 
             this.loading = false;
-        }, 2500);
+        }, 2000);
     },
     data() {
         return {
@@ -64,13 +64,13 @@ export default {
         },
         meetingLink() {
             return window.location.origin + "/" + this.uuid;
-        },
+        }
+    },
+    methods: {
         async copyLink() {
             await navigator.clipboard.writeText(this.meetingLink);
             alert("Link copied to clipboard");
         },
-    },
-    methods: {
         continueToMeetingRoom() {
             return this.$router.push("/" + this.uuid);
         },
