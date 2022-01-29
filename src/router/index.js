@@ -32,13 +32,18 @@ const router = createRouter({
             component: HowItWorks,
         },
         {
+            path: "/404",
+            name: "not-found",
+            component: NotFound,
+        },
+        {
             path: "/:id",
             name: "meeting-room",
             component: MeetingRoom,
         },
         {
             path: "/:catchAll(.*)",
-            component: NotFound,
+            redirect: "/404",
         },
     ],
     history: createWebHistory(),
