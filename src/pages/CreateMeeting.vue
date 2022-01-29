@@ -4,7 +4,7 @@
 
     <section v-if="loading == true" class="flex flex-col items-center justify-center w-full flex-1 px-1 lg:px-20 text-center">
         <div className="flex justify-center items-center">
-            <div className="animate-spin rounded-full h-32 w-32 border-b-8 border-l-4 border-t-8 border-green-500 " />
+            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-green-500" />
         </div> 
         <h1 class="text-3xl font-bold mt-4">Loading...</h1>
         <p class="text-lg font-light mt-4">Please wait while we create a new meeting room.</p>
@@ -46,7 +46,7 @@ export default {
         // Mock API call to save meeting id
         setTimeout(() => {
             this.loading = false;
-        }, 3000);
+        }, 2500);
     },
     data() {
         return {
@@ -61,12 +61,14 @@ export default {
         meetingLink() {
             return window.location.origin + "/" + this.uuid;
         },
-        continueToMeetingRoom() {
-            return this.$router.push("/" + this.uuid);
-        },
         async copyLink() {
             await navigator.clipboard.writeText(this.meetingLink);
             alert("Link copied to clipboard");
+        },
+    },
+    methods: {
+        continueToMeetingRoom() {
+            return this.$router.push("/" + this.uuid);
         },
     },
 };
