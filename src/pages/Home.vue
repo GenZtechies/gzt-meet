@@ -12,7 +12,7 @@
 
                 <div class="box-shadow shadow bg-white p-3 rounded-full flex justify-between my-2 space-x-3">
                     <input v-model="meetingCode" type="text" placeholder="Enter a Meeting Code or Link" class="outline-none ml-3 w-full text-sm" />
-                    <input @click="joinMeeting" :disabled="enabledJoinButton == false" type="submit" value="Join Meeting" class="font-semibold bg-green-600 px-5 py-3 rounded-full hover:bg-green-700 focus:bg-green-700 transition duration-300 ease-in-out text-white cursor-pointer" />
+                    <input @click="joinMeeting" :disabled="enabledJoinButton == false" type="submit" value="Join Meeting" class="font-semibold bg-green-500 px-5 py-3 rounded-full hover:bg-green-700 focus:bg-green-700 transition duration-300 ease-in-out text-white cursor-pointer" />
                 </div>
             </div>
             <div class="m-auto">
