@@ -6,6 +6,7 @@ import Contributors from "../pages/Contributors.vue";
 import CreateMeeting from "../pages/CreateMeeting.vue";
 import HowItWorks from "../pages/HowItWorks.vue";
 import MeetingRoom from "../pages/MeetingRoom.vue";
+import Review from "../pages/Review.vue";
 import NotFound from "../pages/NotFound.vue";
 
 // Vue Router Configuration
@@ -31,6 +32,12 @@ const router = createRouter({
             name: "how-it-works",
             component: HowItWorks,
         },
+        {
+            path: "/review",
+            name: "review",
+            component: Review,
+        },
+
         {
             path: "/404",
             name: "not-found",
