@@ -20,3 +20,9 @@
 # Project - Website
 
 > This website houses all the feautures of any video conferencing application out there 😅
+
+# Technologies Used
+
+- VueJS
+- TailWindCSS
+
