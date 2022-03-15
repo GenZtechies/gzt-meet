@@ -10,7 +10,7 @@
 
 # General Information
 
-> GenZMeet was created by GenZtechies for having meetings with members and other individuals outisde the comunnity.
+> GenZtechies founded GenZMeet to hold meetings with members and other people outside the community.
 
 > Our video conferencing apps allows: 
 - Unlimited number of meetings.
