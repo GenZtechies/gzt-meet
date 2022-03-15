@@ -11,6 +11,8 @@
 # General Information
 
 > GenZMeet was created by GenZtechies for having meetings with members and other individuals outisde the comunnity.
-> Our video conferencing apps allows Unlimited number of meetings.
-Live captioning during meetings. 
-Compatible across devices.
+
+> Our video conferencing apps allows: 
+- Unlimited number of meetings.
+- Live captioning during meetings. 
+- Compatibility across devices.
