@@ -16,3 +16,7 @@
 - Unlimited number of meetings.
 - Live captioning during meetings. 
 - Compatibility across devices.
+
+# Project - Website
+
+> This website houses all the feautures of any video conferencing application out there 😅
