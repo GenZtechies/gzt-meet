@@ -26,3 +26,5 @@
 - VueJS
 - TailWindCSS
 
+# Contact Us
+> Our Email: hello@genztechies.com
