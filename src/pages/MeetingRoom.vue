@@ -2,7 +2,7 @@
     <div>
         <main id="meet" class="w-screen h-screen fixed top-0 bg-[#000]" />
 
-        <section v-if="loading == true" className="flex flex-col items-center justify-center w-screen h-screen fixed top-0 bg-[#000] text-white">
+        <section v-if="loading == true" className="flex flex-col items-center justify-center w-screen h-[95vh] md:h-screen fixed top-0 bg-[#000] text-white">
             <div className="flex flex-col items-center justify-center w-full flex-1 px-1 lg:px-20 text-center">
                 <div className="flex justify-center items-center">
                     <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white" />
