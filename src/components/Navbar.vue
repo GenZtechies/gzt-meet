@@ -3,7 +3,7 @@
         <div class="flex justify-between bg-transparent text-black w-screen">
             <div class="px-5 xl:px-12 py-6 flex w-full items-center">
                 <router-link class="logo text-3xl font-bold font-heading" to="/">
-                    GenZ-Meet
+                    <img src="/assets/logo/logo-icon-green.png" alt="Genztechies Logo" class="w-10 h-10">
                 </router-link>
                 <ul class="flex px-4 mx-auto font-semibold font-heading space-x-12">
                     <li class="hidden md:block">
@@ -13,9 +13,9 @@
                         <router-link class="text-sm transition-all" to="/contributors">Contributors</router-link>
                     </li>
                 </ul>
-                <div class="flex space-x-5 items-center">
+                <div class="flex space-x-5 items-center pr-8">
                     <router-link class="flex items-center" to="/new">
-                        <button class="bg-green-600 px-5 py-2 rounded font-bold text-white text-sm">
+                        <button class="bg-green-600 rounded-xl px-5 py-2 font-bold text-white text-sm">
                             Create New Meeting
                         </button>
                     </router-link>
